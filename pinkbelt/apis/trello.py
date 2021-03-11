@@ -2,10 +2,10 @@ import json
 import re
 import requests
 
-from six.moves.urllib.parse import quote, quote_plus
+from urllib.parse import quote, quote_plus
 
-from blackbelt.config import config
-from blackbelt.errors import ConfigurationError
+from pinkbelt.config import config
+from pinkbelt.errors import ConfigurationError
 
 class Trello(object):
     """

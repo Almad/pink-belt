@@ -1,14 +1,13 @@
 import mock
-from mock import patch
 from nose.tools import assert_equal
 
 import datetime
 
-import blackbelt
-from blackbelt.handle_trello import infer_branch_name, get_next_sunday
+import pinkbelt
+from pinkbelt.handle_trello import infer_branch_name, get_next_sunday
 
 datetime_patcher = mock.patch.object(
-    blackbelt.handle_trello.datetime, 'date',
+    pinkbelt.handle_trello.datetime, 'date',
     mock.Mock(wraps=datetime.datetime)
 )
 

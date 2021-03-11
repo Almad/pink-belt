@@ -1,7 +1,7 @@
 from nose.tools import assert_equal, assert_raises
 from mock import patch
 from sys import version_info
-from blackbelt.git import get_remote_repo_info, get_current_branch
+from pinkbelt.git import get_remote_repo_info, get_current_branch
 
 
 class TestGithubRepoGitAddressParsing(object):

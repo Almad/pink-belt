@@ -1,5 +1,5 @@
 from slacker import Slacker
-from blackbelt.config import config
+from pinkbelt.config import config
 
 class Slack(object):
     def __init__(self, token=None):

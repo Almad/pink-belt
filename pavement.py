@@ -3,7 +3,7 @@ from paver.setuputils import setup
 
 options = environment.options
 
-NAME = 'blackbelt'
+NAME = 'pinkbelt'
 VERSION = '0.16.0'
 
 requires = ['six', 'click', 'requests', 'PyGithub', 'slacker>=0.6.2', 'pyopenssl', 'ndg-httpsclient', 'pyasn1', 'twine']
@@ -11,18 +11,18 @@ requires = ['six', 'click', 'requests', 'PyGithub', 'slacker>=0.6.2', 'pyopenssl
 setup(
     name=NAME,
     version=VERSION,
-    description='Project automation the Apiary way',
+    description='Opinionated Product Development',
     long_description="""
-    Black Belt: Project Automation The Apiary Way
-    ==================================================
+    Pink Belt: Opinionated Product Development
+    ==========================================
 
     Integrates useful GitHub workflow with Trello, Hipchat and Circle CI.
 
-    Please visit `the Black Belt documentation <http://black-belt.readthedocs.org/en/latest/>`_ for more details.
+    Please visit `the Pink Belt documentation <http://pink-belt.readthedocs.org/en/latest/>`_ for more details.
     """,
     author='Lukas Linhart',
-    author_email='lukas@apiary.io',
-    url='http://github.com/apiaryio/black-belt',
+    author_email='bugs@almad.net',
+    url='http://github.com/Almad/pink-belt',
     license='MIT',
     packages=[NAME, NAME + '.apis', NAME + '.commands'],
     install_requires=requires,
@@ -39,7 +39,7 @@ setup(
     scripts=['distutils_scripts/bb'],
     # entry_points={
     #     'console_scripts': [
-    #         'bb = blackbelt.tasks:main'
+    #         'bb = pinkbelt.tasks:main'
     #     ]
     # },
     classifiers=[
@@ -47,10 +47,11 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: Implementation :: CPython",
         "Environment :: Console",
         "Topic :: Documentation",
@@ -59,7 +60,7 @@ setup(
     ]
 )
 
-options.setup.package_data = paver.setuputils.find_package_data("blackbelt", package="blackbelt",
+options.setup.package_data = paver.setuputils.find_package_data("pinkbelt", package="pinkbelt",
                                                 only_in_packages=False)
 
 
@@ -78,8 +79,8 @@ def bump(args):
 
     module_content = "VERSION='%s'\n" % '.'.join(version)
 
-    # bump version in blackbelt
-    with open(path('blackbelt/version.py'), 'w') as f:
+    # bump version in pinkbelt
+    with open(path('pinkbelt/version.py'), 'w') as f:
         f.write(module_content)
 
     # bump version in sphinx
@@ -97,7 +98,7 @@ def bump(args):
         f.writelines(conf)
 
     # bump version in this pavement file itself
-    # we cannot just import it because it implies blackbelt already been
+    # we cannot just import it because it implies pinkbelt already been
     # installed/in path, which may cause some interesting problems
     # solvable by mangling with sys.path, but this just feels...better
     conf = []
@@ -111,7 +112,7 @@ def bump(args):
     with open(path('./pavement.py'), 'w') as f:
         f.writelines(conf)
 
-    sh("git commit pavement.py blackbelt/version.py docs/source/conf.py -m 'Version bump to %s'" % '.'.join(version))
+    sh("git commit pavement.py pinkbelt/version.py docs/source/conf.py -m 'Version bump to %s'" % '.'.join(version))
 
 
 @task

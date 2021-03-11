@@ -3,7 +3,7 @@ from mock import patch, MagicMock
 import requests
 import json
 
-from blackbelt.handle_github import (
+from pinkbelt.handle_github import (
     get_pr_info,
     verify_merge,
     get_pr_ticket_id,

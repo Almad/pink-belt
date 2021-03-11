@@ -1,6 +1,6 @@
 import click
 
-from blackbelt.slack import (
+from pinkbelt.slack import (
     post_message
 )
 

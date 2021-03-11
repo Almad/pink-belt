@@ -1,6 +1,6 @@
 import click
 
-from blackbelt.handle_github import (
+from pinkbelt.handle_github import (
     pull_request,
     merge as do_merge,
     deploy as do_deploy,

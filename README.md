@@ -1,41 +1,22 @@
+# Pink Belt
 
-<p align=center>⚠️ This project is idle since September 2018 ⚠️</p>
-
------------
-
-# Black Belt
-
-Black belt is collection of scripts, tools and guidelines used for developing projects The Apiary Way.
+Pink Belt is an CLI tool for opinionated product development. It glues together Trello, GitHub and Slack for a CLI-driven development. 
 
 
 ## Installation & Usage
 
-Please refer to [The Black Belt Documentation](http://black-belt.readthedocs.org/).
-
-
-## If you want to develop black-belt...
-
-`virtualenv` assumed (`sudo pip install virtualenv`) and Python 2.7
-
-```
-virtualenv --python=/usr/local/bin/python2.7 venv
-source venv/bin/activate
-pip install paver
-pip install -r requirements-development.txt
-paver develop
-paver test
-```
+* `pip install blackbelt`
 
 ### Testing
 
 `paver test`
 
-If you ran `bb init` and you want to do "discovery testing" with the integration tests,
+If you ran `pb init` and you want to do "discovery testing" with the integration tests,
 set `FORCE_DISCOVERY`environment variable to `1`.
 
 ### Troubleshooting
 
-If you try run `paver bump` and get error `TypeError: 'map' object is not subscriptable` you can run `./venv/bin/paver bump` to fix this.
+If you try run `paver bump` and get error `TypeError: 'map' object is not subscriptable` you may need to run run `./venv/bin/paver bump` to fix this.
 
 ### Release
 
@@ -47,3 +28,7 @@ After it, just call `paver release` and enjoy your PyPI.
 
 Note: GPG must be properly configured for usage with `git tag -s` and you must be project maintainer on PyPI.
 
+
+## Acknowledgements
+
+Pink Belt is a fork of unmaintained [Black Belt](https://github.com/apiaryio/black-belt). It's like Black Belt, but with more optimism.

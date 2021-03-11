@@ -2,9 +2,7 @@ from nose.plugins.skip import SkipTest
 
 import os
 
-from blackbelt.config import config
-
-from blackbelt.circle import Client
+from pinkbelt.circle import Client
 
 """
 Integration exploratory playground for CircleCI.

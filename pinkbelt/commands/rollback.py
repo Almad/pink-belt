@@ -1,6 +1,6 @@
 import click
 
-from blackbelt.deployment import (
+from pinkbelt.deployment import (
     rollback_production
 )
 

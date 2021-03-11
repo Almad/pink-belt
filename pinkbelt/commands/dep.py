@@ -2,9 +2,8 @@ import os
 import sys
 
 import click
-import requests
 
-from blackbelt.dependencies import check as do_check, parse_dep
+from pinkbelt.dependencies import check as do_check, parse_dep
 
 
 @click.group(help='Dependency management')

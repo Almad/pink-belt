@@ -1,6 +1,6 @@
 import click
 
-from blackbelt.handle_trello import (
+from pinkbelt.handle_trello import (
     migrate_label as ml,
     schedule_list as sl,
     next_card as n,

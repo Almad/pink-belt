@@ -1,6 +1,6 @@
 from nose.tools import assert_equal
 
-from blackbelt.dependencies import (
+from pinkbelt.dependencies import (
     parse_dep,
     parse_license_text,
 )

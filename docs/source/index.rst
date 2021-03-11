@@ -1,20 +1,19 @@
 
-=================================
-Project automation the Apiary way
-=================================
+=========================================
+Opinionated Product Developer Automation
+=========================================
 
-This is an internal tool for supporting development workflow inside `Apiary <http://apiary.io/>`_. However, we decided to open-source it. Feel free to fork it and use it on your own or inside your company.
-
+Tool for opinionated proudct development
 
 ------------
 Installation
 ------------
 
-On macOS, the easiest way to install blackbelt is via `Homebrew  <https://brew.sh/>`_::
+On macOS, the easiest way to install pinkbelt is via `Homebrew  <https://brew.sh/>`_::
 
-	$ brew install apiaryio/formulae/blackbelt
+	$ brew install apiaryio/formulae/pinkbelt
 
-On other platforms you can install Blackbelt with ``pip install blackbelt`` providing you have Python and pip installed. Consult your platform for documentation on how to install Python and pip.
+On other platforms you can install pinkbelt with ``pip install pinkbelt`` providing you have Python and pip installed. Consult your platform for documentation on how to install Python and pip.
 
 .. note::
    Python 3.6+ is default now and Python 2.7 will be deprecated.
@@ -23,13 +22,13 @@ On other platforms you can install Blackbelt with ``pip install blackbelt`` prov
 Setup
 -----
 
-With that, you should have ``bb`` command. Run interactive ``bb init`` and follow instructions. This is going to connect to services we are using in Apiary for futher interaction:
+With that, you should have ``bb`` command. Run interactive ``bb init`` and follow instructions. This is going to connect to services we are using in Apiary for further interaction:
 
 * GitHub
 * Trello
 * Slack
 
-Retrieved tokens and configuration is stored in ``~/.blackbelt``. Format is now just dumped JSON, don't rely on it; it's probably going to change in the future.
+Retrieved tokens and configuration is stored in ``~/.pinkbelt``. Format is now just dumped JSON, don't rely on it; it's probably going to change in the future.
 
 If you are using ``bash``, you want to enable autocompletion. You can try it with::
 
@@ -55,7 +54,7 @@ If you used Homebrew on macOS, use::
 
 Otherwise::
 
-	$ pip install -U blackbelt
+	$ pip install -U pinkbelt
 
 If you get error along the lines of::
 
@@ -63,19 +62,19 @@ If you get error along the lines of::
 
 you have a problem in your system installation (probably Mac OS X). You can either::
 
-	sudo pip install -U --ignore-installed blackbelt
+	sudo pip install -U --ignore-installed pinkbelt
 
 or::
 
-	pip uninstall blackbelt
-	pip install blackbelt
+	pip uninstall pinkbelt
+	pip install pinkbelt
 
 
 ---------
 Structure
 ---------
 
-`bb` has subcommands that stand for an area of expertise. View help or command reference on how to use those.
+`pb` has subcommands that stand for an area of expertise. View help or command reference on how to use those.
 
 This documents focus more on intended workflow from the perspective of two roles (those may be the same person, of course): Developer and Story Owner.
 

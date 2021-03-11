@@ -7,8 +7,7 @@ import webbrowser
 
 import click
 
-#from blackbelt.apis.trello import *
-from blackbelt.config import config
+from pinkbelt.config import config
 
 from .apis.trello import Trello as TrelloApi
 
