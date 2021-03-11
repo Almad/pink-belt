@@ -5,7 +5,7 @@ Pink Belt is an CLI tool for opinionated product development. It glues together 
 
 ## Installation & Usage
 
-* `pip install blackbelt`
+* `pip install pinkbelt`
 
 ### Testing
 
