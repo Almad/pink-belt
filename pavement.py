@@ -11,15 +11,13 @@ requires = ['six', 'click', 'requests', 'PyGithub', 'slacker>=0.6.2', 'pyopenssl
 setup(
     name=NAME,
     version=VERSION,
-    description='Opinionated Product Development',
+    description='Opinionated Product Development Automation',
     long_description="""
-    Pink Belt: Opinionated Product Development
-    ==========================================
+    # Pink Belt: Opinionated Product Development Automation
 
-    Integrates useful GitHub workflow with Trello, Hipchat and Circle CI.
-
-    Please visit `the Pink Belt documentation <http://pink-belt.readthedocs.org/en/latest/>`_ for more details.
+    Integrates useful GitHub workflow with Trello and Slack.
     """,
+    long_description_content_type = "text/markdown",
     author='Lukas Linhart',
     author_email='bugs@almad.net',
     url='http://github.com/Almad/pink-belt',
