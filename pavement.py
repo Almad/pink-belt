@@ -65,7 +65,7 @@ options.setup.package_data = paver.setuputils.find_package_data("pinkbelt", pack
 @task
 @consume_args
 def bump(args):
-    version = map(int, VERSION.split('.')[0:3])
+    version = list(map(int, VERSION.split('.')[0:3]))
 
     if len(args) > 0 and args[0] == 'major':
         version[1] += 1
@@ -73,7 +73,7 @@ def bump(args):
     else:
         version[2] += 1
 
-    version = map(str, version)
+    version = list(map(str, version))
 
     module_content = "VERSION='%s'\n" % '.'.join(version)
 
